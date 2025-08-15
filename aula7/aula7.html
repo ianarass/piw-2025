@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Download de Dados da API</title>
+</head>
+<body>
+    <h1>Staff de Harry Potter</h1>
+    <button id="carregar">Carregar Dados</button>
+    <div id="resultado"></div>
+    <script src="html.js"></script>
+
+    <script>
+        document.getElementById('carregar').addEventListener('click', function() {
+            fetch('https://hp-api.onrender.com/api/characters/staff')
+                .then(response => response.json())
+                .then(data => {
+                    const resultado = document.getElementById('resultado');
+                    resultado.innerHTML = '';
+                    data.forEach(personagem => {
+                        const p = document.createElement('p');
+                        p.textContent = personagem.name;
+                        resultado.appendChild(p);
+                    });
+                })
+                .catch(error => {
+                    document.getElementById('resultado').textContent = 'Erro ao carregar dados.';
+                });
+        });
+    </script>
+</body>
+</html>
+
