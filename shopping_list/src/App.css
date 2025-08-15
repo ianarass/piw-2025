@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, Helvetica, sans-serif 
+  line-height: 8;
+  color: #000;
+  background-color: #fff;
+}
+
+.App {
+  max-width: 800px;
+  margin: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.filmes-lista {
+  list-style: none;
+}
+
+.filme-item {
+  border: 2px solid #000;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.filme-conteudo {
+  display: flex;
+  justify-content:left;
+  align-items: center;
+}
+
+.filme-info {
+  flex: 10px;
+}
+
+.botao-favorito {
+  padding: 10px 10px;
+  border: 2px solid #000;
+  background-color: #1b8800;
+}
+
+.botao-favorito.favoritado {
+  background-color: rgb(0, 110, 161);
+  color: #d8d8d8;
+}
