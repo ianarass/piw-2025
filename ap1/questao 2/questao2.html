@@ -1,0 +1,56 @@
+<!--Crie uma página HTML com CSS e JavaScript para fazer a listagem de todas as cervejas que
+estão disponíveis na API abaixo. Você deve fazer o envio dos arquivos contendo o HTML, CSS
+e JavaScript.
+
+Link API: https://api.sampleapis.com/beers/ale
+
+Você deve criar um laço de repetição para iterar sobre o arquivo JSON e resgatar os dados
+necessários.
+
+Cada cerveja deve conter o nome, preço e imagem. Para cada cerveja, criar um
+componente <div>. 
+    __Dentro da <div>, organize de uma forma que contenha a imagem, o nome e
+o preço da cerveja. Todas as informações necessárias estão dentro do retorno da requisição à
+API, no formato JSON.__
+
+Depois que fizer a requisição usando o fetch(), use o método .json() para retornar o JSON de
+resposta da requisição. Dentro dele você terá acesso aos atributos necessários (nome, URL da
+imagem e preço). Perceba que há alguns atributos/informações que não são necessárias,
+simplesmente ignore e colete o que é preciso para o exercício.
+Se necessários, use a ferramenta JSON Viewer (https://jsonviewer.stack.hu/) para visualizar
+melhor os dados retornados pela API.
+
+nome, preço e imagem
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>AP1 Segunda questão</title>
+</head>
+<body>
+    <h1>cervejas</h1>
+    <div id="resultado"></div>
+    <script src="questao2.js"></script>
+
+    <script>
+         {
+            fetch('https://api.sampleapis.com/beers/ale')
+                .then(response => response.json())
+                .then(data => {
+                    const resultado = document.getElementById('resultado');
+                    resultado.innerHTML = '';
+                    data.forEach(beer => {
+                        const p = document.createElement('p');
+                        p.textContent = beer.name
+                        resultado.appendChild(p);
+                    });
+                })
+        };
+
+    </script>
+</body>
+</html>
+
+
