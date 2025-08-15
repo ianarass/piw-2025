@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" id="meuHTML">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+    <style>
+        body {
+            text-align: justify;
+            background-color: #f5f5f5;
+        }
+        img {
+            width: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body id="meuBody">
+    <h2 id="minhah2">Clique na tela para ver um novo Pokémon!</h2>
+</body>
+
+<script>
+    let idAtual = 1;
+
+    function mostrarNovoPokemon() {
+        const img = document.createElement("img");
+        img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${idAtual}.png`;
+        img.alt = `Pokemon ${idAtual}`;
+
+        const meuBody = document.getElementById("meuBody");
+        meuBody.appendChild(img);
+
+        idAtual++;
+
+        // Reinicia para o primeiro após o 1025 (limite atual em 2024)
+        if(idAtual > 1025) idAtual = 1;
+    }
+
+    const meuHTML = document.getElementById("meuHTML");
+    meuHTML.addEventListener("click", () => {
+        mostrarNovoPokemon();
+    });
+</script>
+
+</html>

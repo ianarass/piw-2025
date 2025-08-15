@@ -1,0 +1,33 @@
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png
+
+<!DOCTYPE html>
+<html lang="pt-BR" id="meuHTML">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="meuBody">
+    <h2 id="minhah2">Clique na tela para ver um novo Pokémon!</h2>
+</body>
+
+<script>
+
+    function adicionarTag(){
+        const minhaNovaH6 = document.createElement("h6");
+        minhaNovaH6.innerText = "Essa é uma nova tag h6";
+
+        const meuBody = document.getElementById("meuBody")
+        // appendChild
+        meuBody.appendChild(minhaNovaH6);
+    }
+
+    const meuHTML = document.getElementById("meuHTML");
+    meuHTML.addEventListener("click", (e) => {
+        console.log("Cliquei no HTML")
+        adicionarTag();
+    } )
+    
+</script>
+
+</html>
