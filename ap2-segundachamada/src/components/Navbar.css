@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 8px 10px;
+    color: var(--text);
+    font-size: 3rem;
+    background: var(--secondary);
+    height: 80px;
+    align-items: center;
+    
+}
+
+header nav {
+    display: flex;
+    gap: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 2rem;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+
+

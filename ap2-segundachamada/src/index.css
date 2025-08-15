@@ -1,0 +1,20 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary: #1D1616;
+  --secondary: #8E1616;
+  --secondary-opacity: #660202;
+  --text-secondary: D84040;
+  --text: #EEEEEE;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--text);
+}
