@@ -1,0 +1,16 @@
+<!--Usando 2 <input>, receber preço e quantidadee calcular o valor total (preço * quantidade) eexibir o valor total abaixo.
+• Quando um deles for alterado, alterarautomaticamente o valor total-->
+
+<input type="number" id="price" placeholder="Preço" oninput="calculateTotal()" />
+<input type="number" id="quantity" placeholder="Quantidade" oninput="calculateTotal()" />
+<p>Total: <span id="total">0</span></p>
+
+<script>
+    function calculateTotal() {
+        const price = parseFloat(document.getElementById('price').value) || 0;
+        const quantity = parseInt(document.getElementById('quantity').value) || 0;
+        const total = price * quantity;
+        document.getElementById('total').textContent = total.toFixed(2);
+    }
+</script>
+

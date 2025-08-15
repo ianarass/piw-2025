@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Alunos</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .par {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+    <ul id="listaDeAlunos">
+        <li>João</li>
+        <li>Maria</li>
+        <li>Pedro</li>
+        <li>Ana</li>
+        <li>Lucas</li>
+        <li>Carla</li>
+    </ul>
+
+    <script>
+        const alunos = document.querySelectorAll('#listaDeAlunos li');
+        alunos.forEach(function(aluno, index) {
+            if ((index + 1) % 2 === 0) { // Verifica se a posição é par
+                aluno.classList.add('par');
+            }
+        });
+    </script>
+</body>
+</html>
