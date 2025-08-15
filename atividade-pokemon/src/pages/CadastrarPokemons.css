@@ -1,0 +1,124 @@
+:root {
+    --branco: #fff;
+    --amarelo: #ffe066;
+    --vermelho: #ff6f61;
+    --vermelhoescuro: #b23a48;
+    --cinza: #f5f6fa;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: var(--cinza);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    background: var(--branco);
+    padding: 40px 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    min-width: 340px;
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fafbfc;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border: 1.5px solid var(--amarelo);
+    outline: none;
+}
+
+.tipo > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.tipo p {
+    margin: 0;
+    font-size: 1rem;
+    color: #444;
+}
+
+button {
+    margin-top: 12px;
+    padding: 10px;
+    background: var(--amarelo);
+    color: var(--vermelhoescuro);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: var(--vermelho);
+    color: #fff;
+}
+
+
+/* main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100%;
+    background: #f5f6fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    background: var(--branco);
+    padding: 50px;
+    border-radius: 12px;
+
+}
+
+.numero {
+    
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background: var(--amarelo);
+    color:var (--vermelhoescuro);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background:var(--vermelho) ;
+} */

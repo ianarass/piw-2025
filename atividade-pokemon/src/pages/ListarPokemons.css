@@ -1,0 +1,14 @@
+.container-listar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.container-listar h2{
+    width: 100%;
+    margin-bottom: 24px;
+}

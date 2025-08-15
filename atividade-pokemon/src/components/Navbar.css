@@ -1,0 +1,30 @@
+header{
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--branco);
+}
+.navbar {
+  background-color: var(--vermelho);
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+}
+.navbar nav {
+  display: flex;
+  gap: 30px;
+}
+.navbar a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 0;
+  padding: 30px;
+}
+
+.navbar a:hover {
+background-color: var(--vermelhoescuro);
+width: 100%;
+}

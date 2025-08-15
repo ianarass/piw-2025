@@ -1,0 +1,17 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+ --vermelho: rgb(215, 74, 58);
+ --vermelhoescuro: rgb(187, 52, 37);
+ --preto: rgb(20, 20, 20);
+ --amarelo: rgb(237, 200, 101);
+ --branco: rgb(231, 231, 231); 
+  
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+}
