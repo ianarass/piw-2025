@@ -1,0 +1,56 @@
+.tasks {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 12px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.tasks h1 {
+    text-align: center;
+    margin-bottom: 14px;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.tasks label {
+    font-weight: bold;
+    color: #222;
+}
+
+.tasks input[type="text"],
+.tasks textarea,
+.tasks select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.tasks textarea {
+    min-height: 40px;
+    resize: vertical;
+}
+
+.tasks input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.tasks button[type="submit"] {
+    width: 100%;
+    padding: 8px 0;
+    background: #bbb;
+    color: #222;
+    border: 1px solid #999;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tasks button[type="submit"]:hover {
+    background: #999;
+}
